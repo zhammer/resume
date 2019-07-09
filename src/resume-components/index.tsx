@@ -42,8 +42,7 @@ interface HeaderProps {
   phone: string;
   location: string;
 }
-export function Header(props: HeaderProps) {
-  const { name, email, phone, location } = props;
+export function Header({ name, email, phone, location }: HeaderProps) {
   return (
     <components.Section>
       <components.Header.One>{name}</components.Header.One>
@@ -66,12 +65,12 @@ interface ResumeProps {
   header: ReactElement<HeaderProps>;
   sections: ReactElement<SectionProps>[];
 }
-export default function Resume(props: ResumeProps) {
+export default function Resume({ header, sections }: ResumeProps) {
   return (
     <ThemeProvider theme={theme}>
       <components.Container>
-        <>{props.header}</>
-        <>{props.sections}</>
+        <>{header}</>
+        <>{sections}</>
       </components.Container>
     </ThemeProvider>
   );
