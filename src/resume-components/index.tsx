@@ -41,11 +41,16 @@ interface HeaderProps {
   email: string;
   phone: string;
   location: string;
+  profession: string;
+  education: string;
 }
-export function Header({ name, email, phone, location }: HeaderProps) {
+export function Header({ name, email, phone, location, profession, education }: HeaderProps) {
   return (
     <components.Section>
       <components.Header.One>{name}</components.Header.One>
+      <components.Paragraph heavy>
+        {profession}. {education}.
+      </components.Paragraph>
       <components.Paragraph>
         <a href={`mailto:${email}`}>{email}</a> · {phone} · {location}
       </components.Paragraph>
