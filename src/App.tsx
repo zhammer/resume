@@ -42,8 +42,18 @@ export default function App() {
                     <>
                       I work on SeatGeek's commerce team, where I:
                       <ul>
-                        <li>Am leading </li>
-                        <li>B</li>
+                        <li>
+                          Own SeatGeek's new seller verification project to process user KYC and
+                          sanctions regulations in-house.
+                        </li>
+                        <li>
+                          Help build SeatGeek's core checkout systems for processing payments and
+                          payouts to users in both our primary and resale marketplaces.
+                        </li>
+                        <li>
+                          Improve SeatGeek's internal tools for our customer experience and payments
+                          teams.
+                        </li>
                       </ul>
                     </>
                   }
@@ -52,16 +62,18 @@ export default function App() {
                   title="Bloomberg LP · Software Engineer"
                   dateRange="June 2017 - August 2018"
                   description={
-                    <ul>
-                      <li>
-                        Helped provide real-time market data to Bloomberg’s enterprise clients by
-                        building and maintaining APIs.
-                      </li>
-                      <li>
-                        Improved our team’s development, product, and QA workflows by building a web
-                        app to easily subscribe to and view data from our services.
-                      </li>
-                    </ul>
+                    <>
+                      I worked on Bloomberg's real-time data services team, where I:
+                      <ul>
+                        <li>
+                          Provided market data to Bloomberg’s enterprise clients by buildiing APIs.
+                        </li>
+                        <li>
+                          Improved our team’s development, product, and QA workflows by building a
+                          web app to easily subscribe to and view data from our services.
+                        </li>
+                      </ul>
+                    </>
                   }
                 />
               ]}
@@ -75,20 +87,19 @@ export default function App() {
                   description={
                     <>
                       I am on a small volunteer team building a web app that gives Virginia
-                      Democrats insight into statewide political ad spending on Facebook. My
-                      contributions so far have been:
+                      Democrats insight into statewide political ad spending on Facebook, where I:
                       <ul>
                         <li>
-                          Helping kickstart development by designing a GraphQL schema based on input
+                          Helped kickstart development by designing a GraphQL schema based on input
                           from design, product, backend and frontend team members.
                         </li>
                         <li>
-                          Facilitating deployment on AWS of the APIs and ETL pipelines built by our
-                          backend engineer by using the serverless framework.
+                          Facilitate deployment on AWS of our APIs and ETL pipelines using the
+                          serverless framework.
                         </li>
                         <li>
-                          Building the product's web app with another frontend engineer using React,
-                          Typescript and Apollo Client.
+                          Build our website with another frontend engineer using React, Typescript
+                          and Apollo Client.
                         </li>
                       </ul>
                     </>
@@ -99,8 +110,9 @@ export default function App() {
                   dateRange="2018 - Present"
                   description={
                     <>
-                      <a href="https://8bit.morningcd.com">morningcd.com</a> lets people from around
-                      the world make a daily playlist of their favorite songs.
+                      I built <a href="https://8bit.morningcd.com">morningcd.com</a> - a site that
+                      lets people from around the world make a daily playlist of their favorite
+                      songs.
                       <ul>
                         <li>
                           30 for 30 host Jody Avirgan occasionally{" "}
@@ -114,14 +126,9 @@ export default function App() {
                   }
                 />,
                 <Experience
-                  title="Adventure Anywhere · Personal Project"
-                  dateRange="June 2019 - Present"
-                  description={
-                    <>
-                      A port of the 1977 ADVENTURE game that allows for long-running game sessions
-                      peristed amongst multiple players.
-                    </>
-                  }
+                  title="Green Oasis Community Garden · Event Organizer"
+                  dateRange="2017 - Present"
+                  description={<>I organize free jazz concerts at my local community garden.</>}
                 />
               ]}
             />
