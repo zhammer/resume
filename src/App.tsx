@@ -2,6 +2,7 @@ import React from "react";
 import Resume, { Header, Section, Experience } from "./resume-components";
 import styled from "styled-components";
 import GlobalStyle from "./GlobalStyle";
+import GithubCorner from "react-github-corner";
 
 const Page = styled.div`
   background-color: #eee;
@@ -17,6 +18,7 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
+      <GithubCorner href="https://github.com/zhammer/resume" />
       <Page>
         <Resume
           header={
