@@ -43,16 +43,17 @@ export default function App() {
                       I work on SeatGeek's commerce team, where I:
                       <ul>
                         <li>
-                          Own SeatGeek's new seller verification project to process user KYC and
-                          sanctions regulations in-house.
+                          Own SeatGeek's new seller verification project to process seller identity
+                          verification and sanctions regulations in-house.
                         </li>
                         <li>
-                          Help build SeatGeek's core checkout systems for processing payments and
-                          payouts to users in both our primary and resale marketplaces.
+                          Help build SeatGeek's core checkout systems and internal tools for
+                          processing payments and payouts to users in both our primary and resale
+                          marketplaces.
                         </li>
                         <li>
-                          Improve SeatGeek's internal tools for our customer experience and payments
-                          teams.
+                          Connected and collaborated with React NYC to host the React Week 2019
+                          Hackathon at SeatGeek's office.
                         </li>
                       </ul>
                     </>
@@ -63,16 +64,9 @@ export default function App() {
                   dateRange="June 2017 - August 2018"
                   description={
                     <>
-                      I worked on Bloomberg's real-time data services team, where I:
-                      <ul>
-                        <li>
-                          Provided market data to Bloomberg’s enterprise clients by buildiing APIs.
-                        </li>
-                        <li>
-                          Improved our team’s development, product, and QA workflows by building a
-                          web app to easily subscribe to and view data from our services.
-                        </li>
-                      </ul>
+                      I worked on Bloomberg's real-time data services team, where I improved our
+                      team’s development, product, and QA workflows by building a web app to easily
+                      subscribe to and view data from our market data APIs.
                     </>
                   }
                 />
@@ -138,3 +132,5 @@ export default function App() {
     </>
   );
 }
+
+// I built a wrapper around Brandon Rhodes' python port of the 1977 ADVENTURE game to provide functionality for long-running hosted game sessions amongst multiple users.
