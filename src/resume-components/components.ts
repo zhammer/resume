@@ -31,6 +31,7 @@ export const Container = styled.div`
 
 export const Header = {
   One: styled.h1`
+    margin-bottom: 0.25em;
     font-size: 3rem;
     ${withUnderline};
   `,
@@ -39,16 +40,16 @@ export const Header = {
     ${withUnderline};
   `,
   Three: styled.h2<{ heavy?: boolean }>`
-    font-size: 1.2rem;
+    margin-bottom: 0.25em;
+    font-size: 1.4rem;
     font-weight: ${props => (props.heavy ? 400 : 300)};
   `
 };
 
-export const Paragraph = styled.p`
+export const Paragraph = styled.p<{ heavy?: boolean }>`
   font-family: "Roboto Slab", serif;
-  font-weight: 300;
-  padding-top: 0.5em;
-  font-size: 0.9rem;
+  font-weight: ${props => (props.heavy ? 400 : 300)};
+  font-size: 1rem;
 
   & > ul {
     list-style: none;
