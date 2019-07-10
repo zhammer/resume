@@ -5,17 +5,42 @@
 import React, { ReactNode, ReactElement } from "react";
 import * as components from "./components";
 import { ThemeProvider, DefaultTheme } from "styled-components";
+import { HyperLink, Github } from "./icons";
 
 interface ExperienceProps {
   title: string;
+  viewUrl?: string;
+  githubUrl?: string;
   dateRange: string;
   description: ReactNode;
 }
-export function Experience({ title, dateRange, description }: ExperienceProps) {
+export function Experience({ title, dateRange, description, viewUrl, githubUrl }: ExperienceProps) {
   return (
     <div>
       <components.LeftRight>
-        <components.Header.Three heavy>{title}</components.Header.Three>
+        <components.Header.Three heavy>
+          {title}
+          {viewUrl && (
+            <>
+              {" "}
+              <a href={viewUrl} title="View in browser" target="_blank" rel="noopener noreferrer">
+                <HyperLink
+                  style={{ height: "1.25em", verticalAlign: "bottom", paddingBottom: ".05em" }}
+                />
+              </a>
+            </>
+          )}
+          {githubUrl && (
+            <>
+              {" "}
+              <a href={githubUrl} title="View on Github" target="_blank" rel="noopener noreferrer">
+                <Github
+                  style={{ height: "1.25em", verticalAlign: "bottom", paddingBottom: ".05em" }}
+                />
+              </a>
+            </>
+          )}
+        </components.Header.Three>
         <components.Header.Three>{dateRange}</components.Header.Three>
       </components.LeftRight>
       <components.Paragraph>{description}</components.Paragraph>

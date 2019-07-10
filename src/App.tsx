@@ -101,6 +101,8 @@ export default function App() {
                 />,
                 <Experience
                   title="Morning CD · Personal Project"
+                  viewUrl="https://8bit.morningcd.com"
+                  githubUrl="https://github.com/zhammer/morning-cd"
                   dateRange="2018 - Present"
                   description={
                     <>
