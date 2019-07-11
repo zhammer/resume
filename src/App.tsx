@@ -76,7 +76,7 @@ export default function App() {
               title="Outside Work"
               experiences={[
                 <Experience
-                  title="Morning CD · Personal Project"
+                  title="Morning CD"
                   viewUrl="https://8bit.morningcd.com"
                   githubUrl="https://github.com/zhammer/morning-cd"
                   dateRange="2018 - Present"
@@ -124,7 +124,41 @@ export default function App() {
                 <Experience
                   title="Green Oasis Community Garden · Event Organizer"
                   dateRange="2017 - Present"
-                  description={<>I organize free jazz concerts at my local community garden.</>}
+                  description={
+                    <>
+                      I organize free jazz concerts at my local community garden, where local
+                      musicians and East Village residents come together to enjoy free jazz, food
+                      and nature.
+                    </>
+                  }
+                />,
+                <Experience
+                  title="Adventure Anywere"
+                  dateRange="June 2019 - Present"
+                  githubUrl="https://github.com/zhammer/adventure-anywhere"
+                  description={
+                    <>
+                      I built Adventure Anywhere - a wrapper aroundaround Brandon Rhodes' python
+                      port of the 1977 ADVENTURE game to provide functionality for long-running
+                      hosted game sessions amongst multiple users. You can play Adventure Anywhere:
+                      <ul>
+                        <li>
+                          With text messages by texting <a href="sms:+17028002877">+17028002877</a>.
+                        </li>
+                        <li>
+                          With voice installing the{" "}
+                          <a
+                            href="https://www.amazon.com/dp/B07V5H6J94"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Alexa app
+                          </a>
+                          .
+                        </li>
+                      </ul>
+                    </>
+                  }
                 />
               ]}
             />
