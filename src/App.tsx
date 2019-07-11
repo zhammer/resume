@@ -76,6 +76,28 @@ export default function App() {
               title="Outside Work"
               experiences={[
                 <Experience
+                  title="Morning CD · Personal Project"
+                  viewUrl="https://8bit.morningcd.com"
+                  githubUrl="https://github.com/zhammer/morning-cd"
+                  dateRange="2018 - Present"
+                  description={
+                    <>
+                      I built <a href="https://8bit.morningcd.com">morningcd.com</a> - a site that
+                      lets people from around the world make a daily playlist of their favorite
+                      songs.
+                      <ul>
+                        <li>
+                          30 for 30 host Jody Avirgan occasionally{" "}
+                          <a href="https://twitter.com/jodyavirgan/status/1079027426909450240">
+                            tweets
+                          </a>{" "}
+                          it to his followers.
+                        </li>
+                      </ul>
+                    </>
+                  }
+                />,
+                <Experience
                   title="Tech for Campaigns · Virginia Ads Tracker"
                   dateRange="May 2019 - Present"
                   description={
@@ -94,28 +116,6 @@ export default function App() {
                         <li>
                           Build our website with another frontend engineer using React, Typescript
                           and Apollo Client.
-                        </li>
-                      </ul>
-                    </>
-                  }
-                />,
-                <Experience
-                  title="Morning CD · Personal Project"
-                  viewUrl="https://8bit.morningcd.com"
-                  githubUrl="https://github.com/zhammer/morning-cd"
-                  dateRange="2018 - Present"
-                  description={
-                    <>
-                      I built <a href="https://8bit.morningcd.com">morningcd.com</a> - a site that
-                      lets people from around the world make a daily playlist of their favorite
-                      songs.
-                      <ul>
-                        <li>
-                          30 for 30 host Jody Avirgan occasionally{" "}
-                          <a href="https://twitter.com/jodyavirgan/status/1079027426909450240">
-                            tweets
-                          </a>{" "}
-                          it to his followers.
                         </li>
                       </ul>
                     </>
